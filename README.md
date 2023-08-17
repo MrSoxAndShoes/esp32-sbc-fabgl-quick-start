@@ -66,5 +66,6 @@ At the time of this writing,
 
 Copyright (C) 2023 Erik Anderson
 
+**Topics**: Emulators, Arduino, ESP32, FabGL, Olimex
+
 **Subjects**: BASIC, IBM PC, Nostalgia, Programming, Video Games, Vintage Computers, Windows
-**Tags**: Arduino, Emulators, ESP32, FabGL, Olimex
