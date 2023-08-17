@@ -1,0 +1,13 @@
+desc "FreeDOS (floppy 1.44MB)"                    fd0 floppy_FREEDOS.img
+desc "MS-DOS 3.31 (floppy 1.44MB)"                fd0 floppy_MSDOS331.img
+desc "CP/M 86 + Turbo Pascal 3 (floppy 1.44MB)"   fd0 floppy_CPM86.img
+desc "Linux ELKS 0.4.0 (floppy 1.44MB)"           fd0 floppy_ELK040.img
+desc "FreeDOS (HDD 8MB)"                          hd0 hd8_FREEDOS.img     boot hd0
+desc "DOS Programs and Games (HDD 20MB)"          hd0 hd20_DOSPROG.img    boot hd0
+desc "DOS Programming Tools (HDD 20MB)"           hd0 hd20_DOSDEV.img     boot hd0
+desc "Windows 3.0 (HDD 20MB)"                     hd0 hd20_WINHERC.img    boot hd0
+desc "GEM 3.13 (HDD 8MB)"                         hd0 hd8_GEM31.img       boot hd0
+desc "GEOS 2.0 (HDD 20MB)"                        hd0 hd20_GEOS20.img     boot hd0
+desc "MS-DOS 5.00 (HDD 8MB)"                      hd0 hd8_MSDOS500.img    boot hd0
+desc "MS-DOS 6.22 (HDD 8MB)"                      hd0 hd8_MSDOS622.img    boot hd0
+desc "SvarDOS (HDD 10MB)"                         hd0 hd10_SVARDOS.img    boot hd0

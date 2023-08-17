@@ -3,7 +3,7 @@ A quick-start guide to setting up the **FabGL PCEmulator** example for the [**Ol
 
 ## Purpose
 
-![My Olimex ESP32-SBC-FabGL board](/assets/images/olimex-esp32-sbc-fabgl.jpg).
+![My Olimex ESP32-SBC-FabGL board](/images/olimex-esp32-sbc-fabgl.jpg).
 
 I'm a complete novice to Arduino and Raspberry Pi development, so I wrote down these steps to help myself and others get quickly started on using/playing with the board.
 
@@ -24,7 +24,7 @@ At the time of this writing,
 3. The Olimex fork of FabGL adds support for the ESP32-SBC-FabGL board and needs to be installed as a local library. *Unfortunately, you'll need to uninstall Fabrizio's FabGL library if it's already installed.*
     - Go to the [**Olimex FabGL**](https://github.com/OLIMEX/FabGL) repo on GitHub.
     - Click "Download ZIP" from the green "Code" drop-down button. I saved the ZIP file as "Olimex-FabGL.zip" so I didn't get it confused with Fabrizio's repo.
-        > ![Downloading the ZIP file from the repo](/assets/images/download-zip.png)
+        > ![Downloading the ZIP file from the repo](/images/download-zip.png)
     - Unzip and copy the contents to a new folder in the "Documents\Arduino\libraries" folder (e.g. "C:\Users\username\Documents\Arduino\libraries\Olimex-FabGL").
 4.	Close Arduino IDE. The next time the IDE is started, the local Olimex FabGL library will be available for use.
 
@@ -32,7 +32,7 @@ At the time of this writing,
 
 1. Format an SD card as FAT32. For SD cards larger than 32GB (e.g. 64GB, 128GB, etc.), a 32GB (or smaller) partition will need to be created.
 2. Download the boot image files found in [`/examples/VGA/PCEmulator/mconf.h`](https://github.com/OLIMEX/FabGL/blob/master/examples/VGA/PCEmulator/mconf.h) and copy to the root folder of the SD card. This saves having to repeatedly download a boot image from the FabGL website whenever the PCEmulator is started.
-3. Copy the [`mconfs.txt`](/assets/mconfs.txt) file to the root folder of the SD card. The source for this file was created from the `DefaultConfFile` variable also found in [`/examples/VGA/PCEmulator/mconf.h`](https://github.com/OLIMEX/FabGL/blob/master/examples/VGA/PCEmulator/mconf.h), removing C-code constructs, and changing the boot image URLs to local file names.
+3. Copy the [`mconfs.txt`](/mconfs.txt) file to the root folder of the SD card. The source for this file was created from the `DefaultConfFile` variable also found in [`/examples/VGA/PCEmulator/mconf.h`](https://github.com/OLIMEX/FabGL/blob/master/examples/VGA/PCEmulator/mconf.h), removing C-code constructs, and changing the boot image URLs to local file names.
 4. There are many ways to create or add custom boot images, whether it be a floppy disk or a hard drive. My suggestion would be to copy one of the existing image files edit it using [**WinImage**](https://www.winimage.com/download.htm). To make it usable from FabGL,
     - Copy the boot image to the SD card.
     - Add an entry to it in "mconfs.txt".
